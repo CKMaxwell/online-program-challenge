@@ -21,7 +21,7 @@ var searchInsert = function(nums, target) {
     } else if (target < nums[mid]) {
       max = mid - 1;
     } else if (target == nums[mid]) {
-        return mid
+      return mid
     }
   }
   return min
