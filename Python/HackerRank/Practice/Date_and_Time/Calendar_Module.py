@@ -1,9 +1,10 @@
-# 20200803 - Calendar Module
+# 20260208 - Calendar Module
+# https://www.hackerrank.com/challenges/calendar-module/problem?isFullScreen=true
+"""
+Task
+You are given a date. Your task is to find what the day is on that date.
 """
 import calendar
-print calendar.TextCalendar(firstweekday=6).formatyear(2015)
 
-import calendar
-print(calendar.weekday(2016, 5, 15))
-"""
-import calendar
+month, day, year = map(int, input().split())
+print(calendar.day_name[calendar.weekday(year, month, day)].upper())
