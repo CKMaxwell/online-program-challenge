@@ -37,7 +37,7 @@ def quartiles(arr):
     else:
         lower = arr[:q2_index]
         upper = arr[q2_index:]
-    print(lower, upper)
+    # print(lower, upper)
     q1_val = median(lower)
     q3_val = median(upper)
     return [q1_val, median_val, q3_val]
